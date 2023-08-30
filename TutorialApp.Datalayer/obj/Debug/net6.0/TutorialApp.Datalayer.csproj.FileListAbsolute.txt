@@ -1,0 +1,14 @@
+D:\C#\TutorialApp\TutorialApp.Datalayer\bin\Debug\net6.0\TutorialApp.Datalayer.deps.json
+D:\C#\TutorialApp\TutorialApp.Datalayer\bin\Debug\net6.0\TutorialApp.Datalayer.runtimeconfig.json
+D:\C#\TutorialApp\TutorialApp.Datalayer\bin\Debug\net6.0\TutorialApp.Datalayer.dll
+D:\C#\TutorialApp\TutorialApp.Datalayer\bin\Debug\net6.0\TutorialApp.Datalayer.pdb
+D:\C#\TutorialApp\TutorialApp.Datalayer\obj\Debug\net6.0\TutorialApp.Datalayer.csproj.AssemblyReference.cache
+D:\C#\TutorialApp\TutorialApp.Datalayer\obj\Debug\net6.0\TutorialApp.Datalayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\TutorialApp\TutorialApp.Datalayer\obj\Debug\net6.0\TutorialApp.Datalayer.AssemblyInfoInputs.cache
+D:\C#\TutorialApp\TutorialApp.Datalayer\obj\Debug\net6.0\TutorialApp.Datalayer.AssemblyInfo.cs
+D:\C#\TutorialApp\TutorialApp.Datalayer\obj\Debug\net6.0\TutorialApp.Datalayer.csproj.CoreCompileInputs.cache
+D:\C#\TutorialApp\TutorialApp.Datalayer\obj\Debug\net6.0\TutorialApp.Datalayer.dll
+D:\C#\TutorialApp\TutorialApp.Datalayer\obj\Debug\net6.0\refint\TutorialApp.Datalayer.dll
+D:\C#\TutorialApp\TutorialApp.Datalayer\obj\Debug\net6.0\TutorialApp.Datalayer.pdb
+D:\C#\TutorialApp\TutorialApp.Datalayer\obj\Debug\net6.0\TutorialApp.Datalayer.genruntimeconfig.cache
+D:\C#\TutorialApp\TutorialApp.Datalayer\obj\Debug\net6.0\ref\TutorialApp.Datalayer.dll

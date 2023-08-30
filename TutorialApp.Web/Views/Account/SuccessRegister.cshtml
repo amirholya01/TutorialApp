@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Success|Register";
+}
+
+<style>
+    .success-message {
+        display: none;
+        text-align: center;
+        margin-top: 10px;
+        color: #28a745;
+    }
+</style>
+<div class="success-message">
+    <h2>Dear @Model.Username</h2>
+    <p>The activation Email was sent to you, please check @Model.Email</p>
+</div>
