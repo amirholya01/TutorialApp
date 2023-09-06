@@ -10,7 +10,7 @@ namespace TutorialApp.Datalayer.Entities
     public class Choice
     {
         [Key]
-        public long ChoiceId { get; set; }
+        public int ChoiceId { get; set; }
 
         [Display(Name = "content of choice")]
         [Required(ErrorMessage = "The {0} must not be empty.")]
@@ -22,7 +22,7 @@ namespace TutorialApp.Datalayer.Entities
 
         #region Relations
         //Foreign key with Question
-        public virtual long QuestionId { get; set; }
+        public virtual int QuestionId { get; set; }
         public virtual Question Question { get; set; }
         #endregion
     }

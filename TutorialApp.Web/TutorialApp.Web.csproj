@@ -21,8 +21,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\" />
+    <Folder Include="Areas\UserPanel\" />
     <Folder Include="wwwroot\assets\images\" />
     <Folder Include="wwwroot\assets\UserAvatar\" />
+    <Folder Include="wwwroot\UserAvatar\" />
   </ItemGroup>
 
 </Project>

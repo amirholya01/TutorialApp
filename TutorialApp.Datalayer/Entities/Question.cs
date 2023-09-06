@@ -10,7 +10,7 @@ namespace TutorialApp.Datalayer.Entities
     public class Question
     {
         [Key]
-        public long QuestionId { get; set; }
+        public int QuestionId { get; set; }
         [Display(Name = "question content")]
         public string Content { get; set; }
 

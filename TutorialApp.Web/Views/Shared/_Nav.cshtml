@@ -1,5 +1,25 @@
 ﻿<nav class="navbar">
-    <div class="logo">Logo</div>
+    <div class="logo">
+        
+            @if (User.Identity.IsAuthenticated)
+            {
+            <div style="font-size:10px;">
+                <i><a href="#" style="text-decoration:none; color: white;">Welcome @User.Identity.Name</a></i>
+
+                <a href="/Logout" style="text-decoration:none;margin-left:10px; color: white;">Logout</a>
+            </div>
+        }
+            else
+            {
+            <a href="/" style="text-decoration: none; color: white;">Home</a>
+        }
+        
+        
+        
+          
+       
+    </div>
+   
     <ul class="nav-links">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>

@@ -1,0 +1,79 @@
+﻿/* CSS for the header */
+/* CSS for the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item {
+    margin: 0 10px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* CSS for admin panel layout */
+.admin-panel {
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #f1f1f1;
+}
+
+.content {
+    width: 80%;
+    background-color: #fff;
+}
+/* CSS for the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 14px;
+}
+
+/* CSS for responsive design */
+@media screen and (max-width: 600px) {
+    .admin-panel {
+        flex-direction: column;
+    }
+
+    .sidebar, .content {
+        width: 100%;
+    }
+}
+/* CSS for responsive design */
+@media screen and (max-width: 600px) {
+    .logo {
+        font-size: 18px;
+    }
+}
+/* CSS for responsive design */
+@media screen and (max-width: 600px) {
+    .footer-text {
+        font-size: 12px;
+    }
+}
+/* CSS for responsive design */
+@media screen and (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu-item {
+        margin: 10px 0;
+    }
+}

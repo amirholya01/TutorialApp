@@ -10,7 +10,7 @@ namespace TutorialApp.Datalayer.Entities
     public class Video
     {
         [Key]
-        public long VideoId { get; set; }
+        public int VideoId { get; set; }
 
         [Display(Name = "title")]
         [Required(ErrorMessage = "The {0} must not be empty.")]
@@ -22,7 +22,7 @@ namespace TutorialApp.Datalayer.Entities
 
         #region Relations
         //Foreign key for Course
-        public virtual long CourseId { get; set;}
+        public virtual int CourseId { get; set;}
         public virtual Course Course { get; set;}
         #endregion
 

@@ -15,9 +15,9 @@ namespace TutorialApp.Datalayer.Entities.User
         }
 
         [Key]
-        public long UR_Id { get; set; }
-        public long UserId { get; set; }
-        public long RoleId { get; set; }
+        public int UR_Id { get; set; }
+        public int UserId { get; set; }
+        public int RoleId { get; set; }
 
         #region Relations
         public virtual User User { get; set; }

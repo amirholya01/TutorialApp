@@ -10,7 +10,7 @@ namespace TutorialApp.Datalayer.Entities
     public class Text
     {
         [Key]
-        public long TextId { get; set; }
+        public int TextId { get; set; }
 
 
         [Display(Name = "title")]
@@ -27,7 +27,7 @@ namespace TutorialApp.Datalayer.Entities
 
         #region Relations
         //Foreign key with Course
-        public virtual long CourseId {get; set; }
+        public virtual int CourseId {get; set; }
         public virtual Course Course { get; set; }
         #endregion
     }

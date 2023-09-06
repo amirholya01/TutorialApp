@@ -11,7 +11,7 @@ namespace TutorialApp.Datalayer.Entities
     {
         //id title description publishDate
         [Key]
-        public long CourseId { get; set; }
+        public int CourseId { get; set; }
 
 
         [Display(Name = "title")]

@@ -1,0 +1,77 @@
+﻿@page
+@model TutorialApp.Web.Pages.Admin.Users.IndexModel
+@{
+    Layout = "./Shared/_AdminLayout";
+}
+@{
+    ViewData["Title"] = "Index";
+}
+@* <div class="container">
+    <h2>Admin Panel - @ViewData["Title"]</h2>
+    <div class="panel-group">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Users list</div>
+            <div class="panel-body"></div>
+        </div>
+    </div>
+</div> *@
+
+
+<div class="container mt-3">
+    <h2>Search</h2>
+    <hr/>
+    <p>If you want to search for a user by email or username you can do it with these search fields.</p>
+    <form method="post">
+        <div class="row">
+         
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Enter email" name="filterEmail">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Enter Username" name="filterUsername">
+            </div>
+            <div class="col">
+                <button type="submit" class="btn btn-info">search</button>
+            </div>
+     
+        </div>
+    </form>
+    <div class="container mt-3">
+        <h2>Users list</h2>
+        <table class="table table-hover table-bordered  border-primary table-responsive">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                    <th>Registration Date</th>
+                    <th>Commands</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model.usForAdminViewModel.Users)
+                {
+                    <tr>
+                        <td>@user.Username</td>
+                        <td>@user.Email</td>
+                        <td>
+                            @if (user.IsActive)
+                            {
+                                <p class="text-success">Active</p>
+                            }
+                            else
+                            {
+                                <p class="text-danger">DeActive</p>
+                            }
+                        </td>
+                        <td>@user.RegisterDate</td>
+                        <td>
+                            <a class="btn btn-warning btn-sm">Edit</a>
+                            <a class="btn btn-danger btn-sm">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

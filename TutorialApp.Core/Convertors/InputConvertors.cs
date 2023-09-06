@@ -10,7 +10,7 @@ namespace TutorialApp.Core.Convertors
     {
         public static string EmailValidator(string email)
         {
-            return email.Trim().ToLower().ToString();
+            return email.Trim().ToLower();
         }
     }
 }

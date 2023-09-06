@@ -1,8 +1,9 @@
-﻿@{
+﻿@model TutorialApp.Datalayer.Entities.User.User;
+@{
     ViewData["Title"] = "Success|Register";
 }
 
-<style>
+@* <style>
     .success-message {
         display: none;
         text-align: center;
@@ -12,5 +13,12 @@
 </style>
 <div class="success-message">
     <h2>Dear @Model.Username</h2>
-    <p>The activation Email was sent to you, please check @Model.Email</p>
+    <p>The activation Email was sent to you, please check "@Model.Email"</p>
+</div>  *@
+ <div class="container mt-30">
+    <div class="alert alert-success">
+        <h2>Dear @Model.Username</h2>
+        <p>The activitaion Email was sent to you, please check @Model.Email</p>
+    </div>
+
 </div>

@@ -24,11 +24,11 @@ namespace TutorialApp.Datalayer.Migrations
 
             modelBuilder.Entity("TutorialApp.Datalayer.Entities.Choice", b =>
                 {
-                    b.Property<long>("ChoiceId")
+                    b.Property<int>("ChoiceId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+                        .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("ChoiceId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ChoiceId"));
 
                     b.Property<string>("Content")
                         .IsRequired()
@@ -37,8 +37,8 @@ namespace TutorialApp.Datalayer.Migrations
                     b.Property<bool>("IsCorrect")
                         .HasColumnType("bit");
 
-                    b.Property<long>("QuestionId")
-                        .HasColumnType("bigint");
+                    b.Property<int>("QuestionId")
+                        .HasColumnType("int");
 
                     b.HasKey("ChoiceId");
 
@@ -49,11 +49,11 @@ namespace TutorialApp.Datalayer.Migrations
 
             modelBuilder.Entity("TutorialApp.Datalayer.Entities.Course", b =>
                 {
-                    b.Property<long>("CourseId")
+                    b.Property<int>("CourseId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+                        .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("CourseId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CourseId"));
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -74,11 +74,11 @@ namespace TutorialApp.Datalayer.Migrations
 
             modelBuilder.Entity("TutorialApp.Datalayer.Entities.Question", b =>
                 {
-                    b.Property<long>("QuestionId")
+                    b.Property<int>("QuestionId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+                        .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("QuestionId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("QuestionId"));
 
                     b.Property<string>("Content")
                         .IsRequired()
@@ -87,23 +87,26 @@ namespace TutorialApp.Datalayer.Migrations
                     b.Property<long>("QuizId")
                         .HasColumnType("bigint");
 
+                    b.Property<int>("QuizId1")
+                        .HasColumnType("int");
+
                     b.HasKey("QuestionId");
 
-                    b.HasIndex("QuizId");
+                    b.HasIndex("QuizId1");
 
                     b.ToTable("Question");
                 });
 
             modelBuilder.Entity("TutorialApp.Datalayer.Entities.Quiz", b =>
                 {
-                    b.Property<long>("QuizId")
+                    b.Property<int>("QuizId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+                        .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("QuizId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("QuizId"));
 
-                    b.Property<long>("CourseId")
-                        .HasColumnType("bigint");
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -119,18 +122,18 @@ namespace TutorialApp.Datalayer.Migrations
 
             modelBuilder.Entity("TutorialApp.Datalayer.Entities.Text", b =>
                 {
-                    b.Property<long>("TextId")
+                    b.Property<int>("TextId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+                        .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("TextId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TextId"));
 
                     b.Property<string>("Content")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<long>("CourseId")
-                        .HasColumnType("bigint");
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -146,11 +149,11 @@ namespace TutorialApp.Datalayer.Migrations
 
             modelBuilder.Entity("TutorialApp.Datalayer.Entities.User.Role", b =>
                 {
-                    b.Property<long>("RoleId")
+                    b.Property<int>("RoleId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+                        .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("RoleId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RoleId"));
 
                     b.Property<string>("RoleTitle")
                         .IsRequired()
@@ -164,11 +167,11 @@ namespace TutorialApp.Datalayer.Migrations
 
             modelBuilder.Entity("TutorialApp.Datalayer.Entities.User.User", b =>
                 {
-                    b.Property<long>("UserId")
+                    b.Property<int>("UserId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+                        .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("UserId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"));
 
                     b.Property<string>("ActiveCode")
                         .IsRequired()
@@ -206,17 +209,17 @@ namespace TutorialApp.Datalayer.Migrations
 
             modelBuilder.Entity("TutorialApp.Datalayer.Entities.User.UserRole", b =>
                 {
-                    b.Property<long>("UR_Id")
+                    b.Property<int>("UR_Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+                        .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("UR_Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UR_Id"));
 
-                    b.Property<long>("RoleId")
-                        .HasColumnType("bigint");
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
 
-                    b.Property<long>("UserId")
-                        .HasColumnType("bigint");
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
 
                     b.HasKey("UR_Id");
 
@@ -229,14 +232,14 @@ namespace TutorialApp.Datalayer.Migrations
 
             modelBuilder.Entity("TutorialApp.Datalayer.Entities.Video", b =>
                 {
-                    b.Property<long>("VideoId")
+                    b.Property<int>("VideoId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+                        .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("VideoId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("VideoId"));
 
-                    b.Property<long>("CourseId")
-                        .HasColumnType("bigint");
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -269,7 +272,7 @@ namespace TutorialApp.Datalayer.Migrations
                 {
                     b.HasOne("TutorialApp.Datalayer.Entities.Quiz", "Quiz")
                         .WithMany("Questions")
-                        .HasForeignKey("QuizId")
+                        .HasForeignKey("QuizId1")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

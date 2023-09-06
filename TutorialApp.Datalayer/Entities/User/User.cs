@@ -16,7 +16,7 @@ namespace TutorialApp.Datalayer.Entities.User
 
 
         [Key]
-        public long UserId { get; set; }
+        public int UserId { get; set; }
 
         [Display(Name = "username")]
         [Required(ErrorMessage = "The {0} must not be empty.")]
